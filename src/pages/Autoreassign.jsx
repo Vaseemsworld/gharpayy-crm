@@ -9,10 +9,10 @@ const THRESHOLDS = {
   CAUTION: 6, // hrs — yellow
 };
 
-// const getStaleness = (lastActivityAt) => {
-//   const hrs = (Date.now() - new Date(lastActivityAt)) / 3600000;
-//   return hrs;
-// };
+const getStaleness = (lastActivityAt) => {
+  const hrs = (Date.now() - new Date(lastActivityAt)) / 3600000;
+  return hrs;
+};
 
 const getStaleLevel = (hrs) => {
   if (hrs >= THRESHOLDS.URGENT) return "urgent";
