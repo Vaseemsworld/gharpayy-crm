@@ -25,19 +25,34 @@ const Sidebar = ({ page, setPage }) => (
     >
       <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
         <div
-          style={{
-            width: 38,
-            height: 38,
-            borderRadius: 11,
-            background: "linear-gradient(135deg,#FF6B35,#FF8C5A)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontSize: 20,
-            boxShadow: "0 4px 14px rgba(255,107,53,0.45)",
-          }}
+        // style={{
+        //   width: 38,
+        //   height: 38,
+        //   borderRadius: 11,
+        //   background: "linear-gradient(135deg,#FF6B35,#FF8C5A)",
+        //   display: "flex",
+        //   alignItems: "center",
+        //   justifyContent: "center",
+        //   fontSize: 20,
+        //   boxShadow: "0 4px 14px rgba(255,107,53,0.45)",
+        // }}
         >
-          🏘️
+          {/* 🏘️ */}
+          <img
+            src="/gharpayylogo.png"
+            alt="Gharpayy"
+            style={{
+              width: 38,
+              height: 38,
+              borderRadius: 11,
+              background: "linear-gradient(135deg,#FF6B35,#FF8C5A)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: 20,
+              boxShadow: "0 4px 14px rgba(255,107,53,0.45)",
+            }}
+          />
         </div>
         <div>
           <div
@@ -86,12 +101,29 @@ const Sidebar = ({ page, setPage }) => (
             fontWeight: page === n.id ? 700 : 500,
             marginBottom: 2,
             textAlign: "left",
-            borderLeft: page === n.id ? "3px solid #FF6B35" : "3px solid transparent",
+            borderLeft:
+              page === n.id ? "3px solid #FF6B35" : "3px solid transparent",
             transition: "all 0.15s",
           }}
         >
           <span style={{ fontSize: 14 }}>{n.icon}</span>
           {n.label}
+          {n.badge && (
+            <span
+              style={{
+                marginLeft: "auto",
+                fontSize: 8,
+                fontWeight: 800,
+                background: "rgba(255,107,53,0.25)",
+                color: "#FF6B35",
+                padding: "1px 5px",
+                borderRadius: 4,
+                letterSpacing: "0.04em",
+              }}
+            >
+              {n.badge}
+            </span>
+          )}
         </button>
       ))}
     </nav>

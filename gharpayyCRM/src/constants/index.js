@@ -36,13 +36,13 @@ export const VISIT_OUTCOMES = [
 
 export const STAGE_COLORS = {
   "New Lead": "#6366F1",
-  "Contacted": "#3B82F6",
+  Contacted: "#3B82F6",
   "Requirement Collected": "#8B5CF6",
   "Property Suggested": "#F59E0B",
   "Visit Scheduled": "#EC4899",
   "Visit Completed": "#14B8A6",
-  "Booked": "#10B981",
-  "Lost": "#EF4444",
+  Booked: "#10B981",
+  Lost: "#EF4444",
 };
 
 export const SRC_COLORS = {
@@ -75,10 +75,12 @@ export const ACT_CLR = {
 };
 
 export const NAV = [
-  { id: "dashboard", icon: "⬡",  label: "Dashboard" },
-  { id: "leads",     icon: "👥", label: "All Leads" },
-  { id: "pipeline",  icon: "⊞",  label: "Pipeline" },
-  { id: "visits",    icon: "🏠", label: "Visit Planner" },
-  { id: "capture",   icon: "＋", label: "New Lead" },
-  { id: "agents",    icon: "🏆", label: "Agent Performance" },
+  { id: "dashboard", icon: "⬡", label: "Dashboard" },
+  { id: "leads", icon: "👥", label: "All Leads" },
+  { id: "pipeline", icon: "⊞", label: "Pipeline" },
+  { id: "visits", icon: "🏠", label: "Visit Planner" },
+  { id: "capture", icon: "＋", label: "New Lead" },
+  { id: "agents", icon: "🏆", label: "Agent Performance" },
+  { id: "whatsapp", icon: "💬", label: "WhatsApp", badge: "BONUS" },
+  { id: "reassign", icon: "⇄", label: "Auto-Reassign", badge: "BONUS" },
 ];
