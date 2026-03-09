@@ -18,7 +18,7 @@ import VisitPlanner from "./pages/VisitPlanner";
 import NewLead from "./pages/NewLead";
 import AgentPerf from "./pages/AgentPerf";
 import WhatsApp from "./pages/Whatsapp";
-import AutoReassign from "./pages/AutoReassign.jsx";
+import AutoReassign from "./pages/AutoReassign";
 
 export default function App() {
   const [page, setPage] = useState("dashboard");
