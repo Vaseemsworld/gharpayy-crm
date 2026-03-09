@@ -18,7 +18,7 @@ import VisitPlanner from "./pages/VisitPlanner";
 import NewLead from "./pages/NewLead";
 import AgentPerf from "./pages/AgentPerf";
 import WhatsApp from "./pages/Whatsapp";
-// import AutoReassign from "./pages/AutoReassign";
+import AutoReassign from "./pages/AutoReassign";
 
 export default function App() {
   const [page, setPage] = useState("dashboard");
@@ -242,14 +242,14 @@ export default function App() {
           <AgentPerf agents={agents} leads={leads} visits={visits} />
         )}
         {page === "whatsapp" && <WhatsApp leads={leads} agents={agents} />}
-        {/* {page === "reassign" && (
+        {page === "reassign" && (
           <AutoReassign
             leads={leads}
             agents={agents}
             onReassign={handleReassign}
             activities={acts}
           />
-        )} */}
+        )}
       </div>
     </div>
   );
